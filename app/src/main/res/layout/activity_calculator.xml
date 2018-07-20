@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <TextView
+        android:id="@+id/text_view_bill_subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Bill Subtotal (before tax)"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_text_bill_subtotal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_tip_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip Percent (%)"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_text_tip_percent"
+        app:layout_constraintStart_toStartOf="@+id/text_view_bill_subtotal" />
+
+    <TextView
+        android:id="@+id/text_view_tip_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip Amount"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_text_tip_amount"
+        app:layout_constraintStart_toStartOf="@+id/text_view_bill_subtotal" />
+
+    <EditText
+        android:id="@+id/edit_text_bill_subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_tip_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_bill_subtotal"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_bill_subtotal" />
+
+    <EditText
+        android:id="@+id/edit_text_tip_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_bill_subtotal"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_tip_percent" />
+
+    <Button
+        android:id="@+id/button_round_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Round Down"
+        app:layout_constraintEnd_toStartOf="@+id/button_round_up"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_tip_amount"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_tip_amount" />
+
+    <Button
+        android:id="@+id/button_round_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Round Up"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_tip_amount"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_round_down"
+        app:layout_constraintTop_toTopOf="@+id/button_round_down" />
+
+</android.support.constraint.ConstraintLayout>
