@@ -40,7 +40,11 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:gravity="right"
+        android:textDirection="anyRtl"
         android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,7 +54,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:gravity="right"
+        android:textDirection="anyRtl"
         android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
         app:layout_constraintEnd_toEndOf="@+id/edit_text_bill_subtotal"
         app:layout_constraintTop_toBottomOf="@+id/edit_text_bill_subtotal" />
 
@@ -60,7 +68,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:gravity="right"
+        android:textDirection="anyRtl"
         android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
         app:layout_constraintEnd_toEndOf="@+id/edit_text_bill_subtotal"
         app:layout_constraintTop_toBottomOf="@+id/edit_text_tip_percent" />
 
